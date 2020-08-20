@@ -76,7 +76,8 @@ describe "Student" do
 
   describe '.new_from_db' do
     it 'creates an instance with corresponding attribute values' do
-      row = [1, "Pat", 12]
+      # row = [1, "Pat", 12]
+      row = [1, "Pat", "12th"]
       pat = Student.new_from_db(row)
 
       expect(pat.id).to eq(row[0])
